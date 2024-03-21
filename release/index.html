@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/master.css">
+	<script src="/js/master.js"></script>
+	<title>Юбилей ВШБ</title>
+</head>
+
+<body>
+	<main>
+		<a href="javascript:void();" id="mute">
+			<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="27" cy="27" r="27" fill="#13B5CC" />
+				<path id="bar1" fill-rule="evenodd" clip-rule="evenodd" d="M25 39L25 15L28 15L28 39L25 39Z" fill="white" />
+				<path id="bar2" fill-rule="evenodd" clip-rule="evenodd" d="M19 39L19 15L22 15L22 39L19 39Z" fill="white" />
+				<path id="bar3" fill-rule="evenodd" clip-rule="evenodd" d="M13 39L13 15L16 15L16 39L13 39Z" fill="white" />
+				<path id="bar4" fill-rule="evenodd" clip-rule="evenodd" d="M31 39L31 15L34 15L34 39L31 39Z" fill="white" />
+				<path id="bar5" fill-rule="evenodd" clip-rule="evenodd" d="M37 39L37 15L40 15L40 39L37 39Z" fill="white" />
+			</svg>
+		</a>
+		<div class="splash">
+			<div class="loading-wrapper">
+				<span class="spinner"></span>
+				<!-- <span id="loading">Загрузка…</span> -->
+			</div>
+			<div class="complete-wrapper">
+				<a href="#!" id="open-up">Принять поздравление полноценно</a>
+				<a href="#!" id="open-mute">Стыдиливо подглянуть</a>
+				<div class="disclamer">Для полного погружения в праздничную атмосферу просим включить звук!</div>
+			</div>
+		</div>
+		<section id="hero">
+			<div class="bottle-wrapper">
+				<div class="bottle-shaker">
+					<div class="bottle">
+						<img class="step bottle-lazy" id="step1" data-src="/img/step1.png">
+						<img class="step bottle-lazy" id="step2" data-src="/img/step2.png">
+						<img class="step bottle-lazy" id="step3" data-src="/img/step3.png">
+						<div class="bottlecap"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<h1>
+						В этом году любимой ВШБ исполняется 10 лет! Кругленькая цифра, правда? Давайте же отпразднуем это событие ещё и в digital!
+					</h1>
+					<div class="center-align">
+						<a href="javascript:void(0);" id="shaker">
+							<span>Жми!</span>
+							<svg viewBox="0 0 60 60">
+								<circle r="28" cx="30" cy="30" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="rest">
+			<section id="roll">
+				<svg id="foam" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850.39 283.46">
+					<defs>
+						<style>
+							.foam-el {
+								fill: #fcd339;
+								transform: scale(0) translateY(100px);
+								transform-origin: center center;
+								transform-box: fill-box;
+							}
+
+							.foam-el.active {
+								animation: grow 2s cubic-bezier(.55, 0, .42, 1.25) forwards;
+							}
+
+							@media(max-width: 800px) {
+
+								.foam-el.active {
+									animation: growMobile 2s cubic-bezier(.55, 0, .42, 1.25) forwards;
+								}
+							}
+
+							#b1 {
+								animation-delay: .2s
+							}
+
+							#b2 {
+								animation-delay: .4s
+							}
+
+							#b3 {
+								animation-delay: .1s
+							}
+
+							#b4 {
+								animation-delay: .7s
+							}
+
+							#b5 {
+								animation-delay: .5s
+							}
+
+							#b6 {
+								animation-delay: .4s
+							}
+
+							#b7 {
+								animation-delay: .7s
+							}
+
+							#b8 {
+								animation-delay: .2s
+							}
+
+							#b9 {
+								animation-delay: .8s
+							}
+
+							@keyframes grow {
+								to {
+									transform: scale(1);
+								}
+							}
+
+							@keyframes growMobile {
+								to {
+									transform: scale(2);
+								}
+							}
+						</style>
+					</defs>
+					<circle id="b9" class="foam-el" cx="40" cy="294" r="76" />
+					<circle id="b8" class="foam-el" cx="392" cy="298" r="66" />
+					<circle id="b7" class="foam-el" cx="624" cy="286" r="74" />
+					<circle id="b6" class="foam-el" cx="816" cy="304" r="68" />
+					<circle id="b5" class="foam-el" cx="508" cy="268" r="121" />
+					<circle id="b4" class="foam-el" cx="727" cy="284" r="100" />
+					<circle id="b3" class="foam-el" cx="238" cy="290" r="86" />
+					<circle id="b2" class="foam-el" cx="138" cy="276" r="114" />
+					<circle id="b1" class="foam-el" cx="318" cy="308" r="78" />
+				</svg>
+				<div class="champ">
+					<div class="container">
+						<div class="row">
+							<div class="col l8 offset-l2 m12">
+								<h2 class="center-align"><span class="glyph bottle"></span> Ура! Выпейте шампанского и крутите колесо поздравлений!</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col no-padding">
+							<div class="slider-container">
+								<div class="swiper" id="roll-slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="video" data-video="1.mp4">
+												<img src="/video/preview/1.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="2.mp4">
+												<img src="/video/preview/2.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="3.mp4">
+												<img src="/video/preview/3.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="6.mp4">
+												<img src="/video/preview/6.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="7.mp4">
+												<img src="/video/preview/7.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="8.mp4">
+												<img src="/video/preview/8.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="9.mp4">
+												<img src="/video/preview/9.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="10.mp4">
+												<img src="/video/preview/10.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="4.mp4">
+												<img src="/video/preview/4.png" alt="">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="video" data-video="5.mp4">
+												<img src="/video/preview/5.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+								<a href="" class="prev"></a>
+								<a href="" class="next"></a>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col l6 offset-l3 m8 offset-m2 s12">
+								<h3> Время для тоста!<span class="glyph bottle"></span><br>Выпили? Продолжаем! </h3>
+								<p class="center-align">
+									Впереди самое интересное! Было трудно, но у нас получись раздобыть супер-пупер-секретные цифры именинников.
+									Они складываются в интересную картину, которая, полностью отражает масштаб вашей улётности . В общем, сейчас узнаете,
+									насколько вы красавчики (и красавицы).
+								</p>
+							</div>
+							<div class="col xl8 offset-xl2 l10 offset-l1 m12">
+								<div class="wrapper">
+									<img data-src="/img/more1.png" alt="" class="lazy more1">
+									<img data-src="/img/more2.png" alt="" class="lazy more2">
+									<img data-src="/img/more3.png" alt="" class="lazy more3">
+									<div class="sticker">
+										<div class="counter">
+											<div class="count-animate" data-target="41">0</div>
+										</div>
+										<p>Раз бились умами и не разбились!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="out">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 m8 s10 xs12 offset-l3 offset-m2 offset-s1">
+							<div class="counter">
+								<span class="count-animate" data-target="325">0</span>
+							</div>
+							<p>Выпускников за всю историю покинули стены и личные кабинеты ВШБ с дипломом, а теперь создают ох<span class="glyph glasses"></span>енные бренды.</p>
+						</div>
+					</div>
+				</div>
+				<div class="out" id="out1"></div>
+				<div class="out" id="out2"></div>
+				<div class="out" id="out3"></div>
+			</section>
+			<section id="another">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 offset-l3 m8 offset-m2 s12">
+							<h2>Вы — научили, мы — поработали!</h2>
+						</div>
+						<div class="col l10 offset-l1 m12">
+							<div class="wrapper">
+								<img data-src="/img/another1.png" alt="" class="lazy more1">
+								<img data-src="/img/another2.png" alt="" class="lazy more2">
+								<img data-src="/img/another3.png" alt="" class="lazy more3">
+								<div class="sticker1">
+									<div class="counter">
+										<div class="count-animate" data-target="246">0</div>
+									</div>
+									<p>Публичных защит реальных кейсов</p>
+								</div>
+								<div class="sticker2">
+									<div class="counter">
+										<div class="count-animate" data-target="61">0</div>
+									</div>
+									<p>социальных проектов</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="more-numbers">
+				<div class="container">
+					<div class="row flex">
+						<div class="col s12">
+							<h2 class="center-align">
+								Наша общая статистика<span class="glyph in-love"></span>
+							</h2>
+						</div>
+						<div class="col l3 m6 s6 xs6 t12">
+							<div class="card lazy" data-bg="/img/card1.jpg">
+								<div class="count">&gt; 50</div>
+								<p>стран в географии выпускников</p>
+							</div>
+						</div>
+						<div class="col l3 m6 s6 xs6 t12">
+							<div class="card lazy dark" data-bg="/img/card-dark1.png">
+								<div class="count">100%</div>
+								<p>коннект преподавателей со студентами</p>
+							</div>
+						</div>
+						<div class="col l3 m6 s6 xs6 t12">
+							<div class="card lazy" data-bg="/img/card2.jpg">
+								<div class="count">200%</div>
+								<p>желания вернуться и поучиться ещё</p>
+							</div>
+						</div>
+						<div class="col l3 m6 s6 xs6 t12">
+							<div class="card lazy dark" data-bg="/img/card-dark2.png">
+								<div class="count">9999%</div>
+								<p>взаимной любви <span class="glyph heart"></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="hearts">
+				<div class="container">
+					<div class="row">
+						<div class="col l8 m9 s12 margin-bottom">
+							Каждое сердечко — для вас, ВШБ! Свои чувтсва студенты и преподаватели пронесут через любые расстояния в вечность<span class="glyph heart-hands"></span>
+						</div>
+						<div class="col l3 offset-l1 m3 s6 offset-s3 xs8 offset-xs2">
+							<div id="heart">
+								<span id="currentHearts"></span>
+								<img data-src="/img/heart.svg" alt="" class="lazy">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="gallery">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h2>А теперь — школьный альбом!</h2>
+					</div>
+				</div>
+				<div class="gallery-wrapper">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-26.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1064" data-src="/img/gallery/gallery-6.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-23.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1071" data-src="/img/gallery/gallery-51.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-12.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-32.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-4.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-40.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-38.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-37.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1064" data-src="/img/gallery/gallery-3.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1144" height="1600" data-src="/img/gallery/gallery-47.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-13.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-10.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-21.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-27.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1066" data-src="/img/gallery/gallery-43.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-35.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-16.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1071" data-src="/img/gallery/gallery-52.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-65.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-22.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1357" height="1600" data-src="/img/gallery/gallery-61.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-39.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-19.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1065" data-src="/img/gallery/gallery-30.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1071" data-src="/img/gallery/gallery-53.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1072" data-src="/img/gallery/gallery-64.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1200" height="1600" data-src="/img/gallery/gallery-46.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1065" data-src="/img/gallery/gallery-60.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1198" height="1600" data-src="/img/gallery/gallery-48.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1065" data-src="/img/gallery/gallery-11.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1086" height="726" data-src="/img/gallery/gallery-56.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-18.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1086" height="726" data-src="/img/gallery/gallery-58.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-28.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-36.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1200" height="1600" data-src="/img/gallery/gallery-44.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1064" data-src="/img/gallery/gallery-2.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-31.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1086" height="726" data-src="/img/gallery/gallery-59.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1063" data-src="/img/gallery/gallery-5.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1065" data-src="/img/gallery/gallery-20.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-41.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1066" data-src="/img/gallery/gallery-50.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-66.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-17.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1202" data-src="/img/gallery/gallery-45.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-14.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1607" data-src="/img/gallery/gallery-49.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-25.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1086" height="726" data-src="/img/gallery/gallery-57.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1063" data-src="/img/gallery/gallery-7.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1034" data-src="/img/gallery/gallery-8.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-62.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-15.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-1.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-29.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-24.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1071" data-src="/img/gallery/gallery-55.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1069" data-src="/img/gallery/gallery-33.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1071" data-src="/img/gallery/gallery-54.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-63.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1064" data-src="/img/gallery/gallery-42.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-9.png">
+					<img alt="" class="lazy responsive-img zoomer" width="1600" height="1068" data-src="/img/gallery/gallery-34.png">
+				</div>
+			</section>
+			<section id="congratulations">
+				<div class="container">
+					<div class="row">
+						<div class="col l6 offset-l3 m6 offset-m3 s8 offset-s2 xs10 offset-xs1">
+							<div class="congratulations-wrapper">
+								<div class="img-wrapper">
+									<img alt="" class="lazy" data-src="/img/cake.jpg">
+								</div>
+								<div class="wrapper">
+									<span>поздравляем</span>
+									<span>ВШБ</span>
+									<span>с юбилеем</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					Создано <a href="https://2br.agency">2BR.agency при поддержке…</a>
+				</div>
+				<div class="col xl2 offset-xl3 l4 m4 s6">
+					<a href="https://www.ddvb.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/ddvb.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://www.depotwpf.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/depot.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://www.dotorg.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/dotorg.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 offset-xl3 l4 m4 s6">
+					<a href="https://plenum.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/plenum.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://2br.agency" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/2br.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://ddc.group/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/ddc.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 offset-xl3 l4 m4 s6">
+					<a href="http://befive.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/b5.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://artonica.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/artonika.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6">
+					<a href="https://kitkot.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/kitikot.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 offset-xl4 l4 offset-l2 m4 offset-m2 s6">
+					<a href="https://ra-24.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/ra.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+				<div class="col xl2 l4 m4 s6 offset-s3">
+					<a href="http://russianbranding.ru/" target="_blank" rel="nofollow" class="logo-link">
+						<img data-src="/img/logo/abkr.svg" alt="" class="responsive-img lazy">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 center-align">© 2024</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

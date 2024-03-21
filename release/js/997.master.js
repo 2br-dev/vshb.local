@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[997],{997:(a,t,e)=>{async function l(a,t=!0){await a.addParticleUpdater("tilt",(async a=>{const{TiltUpdater:t}=await e.e(8109).then(e.bind(e,8109));return new t(a)}),t)}e.d(t,{loadTiltUpdater:()=>l})}}]);

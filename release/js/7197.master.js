@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[7197],{7197:(a,l,e)=>{async function t(a,l=!0){await a.addParticleUpdater("roll",(async()=>{const{RollUpdater:a}=await e.e(4565).then(e.bind(e,4565));return new a}),l)}e.d(l,{loadRollUpdater:()=>t})}}]);

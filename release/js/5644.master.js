@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[5644],{5644:(n,a,i)=>{async function l(n,a=!0){const{MotionPlugin:l}=await i.e(3770).then(i.bind(i,3770));await n.addPlugin(new l(n),a)}i.d(a,{loadMotionPlugin:()=>l})}}]);

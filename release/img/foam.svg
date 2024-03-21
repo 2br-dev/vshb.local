@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="foam" data-name="Layer 1" viewBox="0 0 850.39 283.46">
+  <defs>
+    <style>
+      .foam-el{fill:#fcd339;transform:scale(1) translateY(200px);transform-origin:center center;transform-box:fill-box;animation:grow 2s cubic-bezier(.55,0,.42,1.25) forwards}
+    </style>
+  </defs>
+  <circle cx="40" cy="294" r="76" class="foam-el" style="animation-delay:.8s"/>
+  <circle cx="392" cy="298" r="66" class="foam-el" style="animation-delay:.2s"/>
+  <circle cx="624" cy="286" r="74" class="foam-el" style="animation-delay:.7s"/>
+  <circle cx="816" cy="304" r="68" class="foam-el" style="animation-delay:.4s"/>
+  <circle cx="508" cy="268" r="121" class="foam-el" style="animation-delay:.5s"/>
+  <circle cx="727" cy="284" r="100" class="foam-el" style="animation-delay:.7s"/>
+  <circle cx="238" cy="290" r="86" class="foam-el" style="animation-delay:.1s"/>
+  <circle cx="138" cy="276" r="114" class="foam-el" style="animation-delay:.4s"/>
+  <circle cx="318" cy="308" r="78" class="foam-el" style="animation-delay:.2s"/>
+</svg>

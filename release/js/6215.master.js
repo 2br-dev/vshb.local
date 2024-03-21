@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[6215],{6215:(a,e,t)=>{async function b(a,e=!0){await a.addParticleUpdater("wobble",(async a=>{const{WobbleUpdater:e}=await t.e(4402).then(t.bind(t,4402));return new e(a)}),e)}t.d(e,{loadWobbleUpdater:()=>b})}}]);

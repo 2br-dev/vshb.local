@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[8433],{8433:(a,e,t)=>{async function s(a,e=!0){await a.addParticleUpdater("outModes",(async a=>{const{OutOfCanvasUpdater:e}=await t.e(3039).then(t.bind(t,3039));return new e(a)}),e)}t.d(e,{loadOutModesUpdater:()=>s})}}]);

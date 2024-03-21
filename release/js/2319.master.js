@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[2319],{2319:(a,e,t)=>{async function c(a,e=!0){await a.addParticleUpdater("color",(async a=>{const{ColorUpdater:e}=await t.e(7695).then(t.bind(t,7695));return new e(a)}),e)}t.d(e,{loadColorUpdater:()=>c})}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[3245],{3245:(a,e,s)=>{async function n(a,e=!0){await a.addMover("base",(async()=>{const{BaseMover:a}=await s.e(3250).then(s.bind(s,3250));return new a}),e)}s.d(e,{loadBaseMover:()=>n})}}]);

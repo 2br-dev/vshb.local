@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvshb_local=self.webpackChunkvshb_local||[]).push([[258],{258:(a,e,s)=>{async function t(a,e=!0){const{StarDrawer:t}=await s.e(8977).then(s.bind(s,8977));await a.addShape("star",new t,e)}s.d(e,{loadStarShape:()=>t})}}]);

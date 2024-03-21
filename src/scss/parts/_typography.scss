@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'TT Norm Pro';
+	src: 
+		url('/fonts/TTNormsPro-Regular.ttf')  format('truetype'),
+		url('/fonts/TTNormsPro-Regular.woff') format('woff'),
+		url('/fonts/TTNormsPro-Regular.woff2') format('woff2'),
+		url('/fonts/TTNormsPro-Regular.eot#iefix') format('embedded-opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'TT Norm Pro';
+	src: 
+		url('/fonts/TTNormsPro-Bold.ttf')  format('truetype'),
+		url('/fonts/TTNormsPro-Bold.woff') format('woff'),
+		url('/fonts/TTNormsPro-Bold.woff2') format('woff2'),
+		url('/fonts/TTNormsPro-Bold.eot#iefix') format('embedded-opentype');
+	font-weight: bold;
+}
+
+body{
+
+	font-family: 'TT Norm Pro';
+	font-weight: normal;
+
+	& h1, & h2, & h3, &h4{
+		font-weight: normal;
+		user-select: none;
+	}
+
+	& span.glyph{
+		padding-left: 1.2em;
+		margin-right: .3em;
+		margin-left: .3em;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&.bottle{background-image: url(/img/bottle-glyph.png);}
+		&.heart-hands{	background-image: url(/img/heart-hands-glyph.png);}
+		&.in-love{	background-image: url(/img/in-love-glyph.png);}
+		&.heart{	background-image: url(/img/heart-glyph.png);}
+		&.glasses{	background-image: url(/img/glasses-glyph.png);}
+	}
+}
