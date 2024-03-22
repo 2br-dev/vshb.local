@@ -25,7 +25,7 @@ body{
 
 	& h1, & h2, & h3, &h4{
 		font-weight: normal;
-		user-select: none;
+		// user-select: none;
 	}
 
 	& span.glyph{
@@ -41,5 +41,6 @@ body{
 		&.in-love{	background-image: url(/img/in-love-glyph.png);}
 		&.heart{	background-image: url(/img/heart-glyph.png);}
 		&.glasses{	background-image: url(/img/glasses-glyph.png);}
+		&.shy{	background-image: url(/img/shy-glyph.png);}
 	}
 }

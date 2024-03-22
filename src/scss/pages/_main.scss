@@ -216,6 +216,23 @@ main{
 		&.loaded{
 			opacity: 0;
 			pointer-events: none;
+
+			& ~ #hero{
+
+				& a{
+					animation: enablePush .8s forwards;
+				}
+
+				& svg{
+
+					transform: rotate(90deg);
+
+					& circle{
+						animation: fillStroke 1s ease-in-out forwards;
+						animation-delay: .8s;
+					}
+				}
+			}
 		}
 	}
 
@@ -256,8 +273,21 @@ main{
 				color: #fff;
 				position: relative;
 				z-index: 80;
+				border-radius: 50%;
 
-				animation: enablePush 1.8s forwards;
+				&:before{
+					content: '';
+					display:block;
+					position: absolute;
+					width: 90%;
+					height: 90%;
+					top: 5%;
+					left: 5%;
+					border-radius: 50%;
+					background-image: linear-gradient(to left, rgba(#fff, 0) .5%, rgba(#fff, .5) 1%);
+					background-repeat: no-repeat;
+					background-position: bottom -150px center;
+				}
 
 				& svg{
 
@@ -268,21 +298,28 @@ main{
 					right: 0;
 					transform: rotate(90deg);
 					z-index: -1;
-					animation: pulse 1.3s ease-in-out infinite;
-					animation-delay: 1.8s;
 					
 					& circle{
 						stroke: #fff;
 						stroke-width: 1px;
 						fill: rgba(#13B5CC, .7);
 						stroke-dasharray: 0 1000;
-						animation: fillStroke 1s ease-in-out forwards;
-						animation-delay: .8s;
 					}
 				}
 
 				&.disabled{
 					pointer-events: none;
+				}
+
+				&.wait{
+
+					& svg{
+						animation: none !important;
+					}
+
+					&:before{
+						animation: wait 1s linear;
+					}
 				}
 			}
 
@@ -1354,13 +1391,13 @@ footer{
 
 @keyframes pulse{
 	0%{
-		transform: scale(1);
+		transform: scale(1) rotate(90deg);
 	}
 	50%{
-		transform: scale(1.2);
+		transform: scale(1.2) rotate(90deg);
 	}
 	100%{
-		transform: scale(1);
+		transform: scale(1) rotate(90deg);
 	}
 }
 
@@ -1382,5 +1419,14 @@ footer{
 	}
 	90%{
 		transform: scaleY(.2);
+	}
+}
+
+@keyframes wait{
+	0%{
+		background-position: bottom -150px center;
+	}
+	100%{
+		background-position: bottom 0 center;
 	}
 }

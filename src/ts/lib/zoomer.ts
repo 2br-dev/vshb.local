@@ -16,6 +16,13 @@ class Zoomer{
 	srcAttribute:string;
 	selector:string;
 
+	/**
+	 * Открытие изображений по клику
+	 * @param {string} selector Селектор изображений
+	 * @param {string} srcAttribute Атрибут ресурса (data-? | src)
+	 * @param {boolean} isDataSet Атрибут является Data-атрибутом
+	 * @param {number} transition Длительность анимации открытия
+	 */
 	constructor(selector:string, srcAttribute:string, isDataSet:boolean, transition:number = 400){
 
 		this.transitionMs = transition;
@@ -272,6 +279,8 @@ class Zoomer{
 	}
 
 	afterMatch() {
+
+		// Блокирование элементов управления до окончания анимации
 
 		let zoomer = document.querySelector('.zoomer-viewer');
 		if (!zoomer) { return; }

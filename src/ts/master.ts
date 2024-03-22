@@ -301,6 +301,7 @@ function toggleMute(e:MouseEvent){
 	e.preventDefault();
 	let link =  e.currentTarget as HTMLLinkElement;
 	let music = sound('background');
+	music.loop = true;
 
 	if (music?.paused) {
 		music?.play();
@@ -354,7 +355,9 @@ function setupSplash(){
 		document.querySelector('.bottle-wrapper')?.classList.add('loaded');
 		document.querySelector('.splash')?.classList.add('complete');
 		document.querySelector('h1')?.classList.add('complete');
-
+		setTimeout(()=>{
+			$('#hero svg').css('animation', 'pulse 1.3s ease-in-out infinite');
+		}, 3000);
 	}
 }
 
@@ -560,20 +563,24 @@ function shake(e:MouseEvent){
 	switch(true){
 		case shakedCount == 0:
 			link.classList.add('disabled');
+			link.classList.add('wait');
 			el.classList.add('active'); 
-			sound('0-fire')?.play();
+			playSound('0-fire');
 			setTimeout(() => {
 				link.classList.remove('disabled');
+				link.classList.remove('wait');
 				shakedCount++;
 			}, 1000);
 			break;
 		case shakedCount == 1:
 			el.classList.add('shake');
 			link.classList.add('disabled');
-			sound('1-folga')?.play();
+			link.classList.add('wait');
+			playSound('1-folga');
 			setTimeout(() =>{
 				el.classList.remove('shake');
 				link.classList.remove( 'disabled');
+				link.classList.remove('wait');
 				shakedCount++;
 			}, 1000);
 			setTimeout(() => {
@@ -584,10 +591,12 @@ function shake(e:MouseEvent){
 		case shakedCount == 2:
 			el.classList.add('shake');
 			link.classList.add('disabled');
-			sound('2-wire')?.play();
+			link.classList.add('wait');
+			playSound('2-wire');
 			setTimeout(() =>{
 				el.classList.remove('shake');
 				link.classList.remove( 'disabled');
+				link.classList.remove('wait');
 				shakedCount++;
 			}, 1000);
 			setTimeout(() => {
@@ -599,13 +608,14 @@ function shake(e:MouseEvent){
 			cap.classList.add('flying');
 			let foamEl = document.querySelector('#foam');
 			let start = (foamEl?.clientHeight / 3) * 2;
-			sound('3-cap')?.play();
+			playSound('3-cap');
 			$('.foam-el').addClass('active');
 			let targetEl = <HTMLElement>document.querySelector('.champ');
 			let top = targetEl.offsetTop + window.innerHeight;
 			document.querySelector('#step3')?.classList.add('shut');
 			document.documentElement.scrollTop = start;
 			link.classList.add('disabled');
+			link.classList.add('wait');
 
 			setTimeout(() => {
 				
@@ -618,9 +628,20 @@ function shake(e:MouseEvent){
 					$('#bubbles').addClass('hide');
 					document.documentElement.scrollTop = 0;
 					link.classList.remove('disabled');
+					link.classList.remove('wait');
 				})
 			}, 600);
 			break;
+	}
+}
+
+function playSound(name:string){
+	let sound2play = sound(name);
+	let mute = <HTMLLinkElement>document.querySelector('#mute');
+	let allow2play = !mute.classList.contains('stop');
+
+	if(allow2play){
+		sound2play?.play();
 	}
 }
 

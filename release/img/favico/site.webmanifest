@@ -1,0 +1,19 @@
+{
+    "name": "\u0412\u0428\u0411",
+    "short_name": "\u0412\u0428\u0411",
+    "icons": [
+        {
+            "src": "/img/favico/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favico/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#2b2e35",
+    "background_color": "#2b2e35",
+    "display": "standalone"
+}

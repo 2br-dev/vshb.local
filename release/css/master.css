@@ -6227,9 +6227,6 @@ body {
 
 body h1, body h2, body h3, bodyh4 {
     font-weight: normal;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
 }
 
 body span.glyph {
@@ -6259,6 +6256,10 @@ body span.glyph.heart {
 
 body span.glyph.glasses {
     background-image: url(../img/glasses-glyph.png);
+}
+
+body span.glyph.shy {
+    background-image: url(../img/shy-glyph.png);
 }
 
 body .margin-bottom {
@@ -6457,6 +6458,19 @@ main .splash.loaded {
     pointer-events: none;
 }
 
+main .splash.loaded ~ #hero a {
+    animation: enablePush .8s forwards;
+}
+
+main .splash.loaded ~ #hero svg {
+    transform: rotate(90deg);
+}
+
+main .splash.loaded ~ #hero svg circle {
+    animation: fillStroke 1s ease-in-out forwards;
+    animation-delay: .8s;
+}
+
 main section#hero {
     height: 100vh;
     max-height: -webkit-fill-available;
@@ -6493,7 +6507,21 @@ main section#hero a {
     color: #fff;
     position: relative;
     z-index: 80;
-    animation: enablePush 1.8s forwards;
+    border-radius: 50%;
+}
+
+main section#hero a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0.5%, rgba(255, 255, 255, 0.5) 1%);
+    background-repeat: no-repeat;
+    background-position: bottom -150px center;
 }
 
 main section#hero a svg {
@@ -6504,8 +6532,6 @@ main section#hero a svg {
     right: 0;
     transform: rotate(90deg);
     z-index: -1;
-    animation: pulse 1.3s ease-in-out infinite;
-    animation-delay: 1.8s;
 }
 
 main section#hero a svg circle {
@@ -6513,12 +6539,18 @@ main section#hero a svg circle {
     stroke-width: 1px;
     fill: rgba(19, 181, 204, 0.7);
     stroke-dasharray: 0 1000;
-    animation: fillStroke 1s ease-in-out forwards;
-    animation-delay: .8s;
 }
 
 main section#hero a.disabled {
     pointer-events: none;
+}
+
+main section#hero a.wait svg {
+    animation: none !important;
+}
+
+main section#hero a.wait:before {
+    animation: wait 1s linear;
 }
 
 main section#hero .bottle-wrapper {
@@ -7937,15 +7969,15 @@ footer a.logo-link {
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(1) rotate(90deg);
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.2) rotate(90deg);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1) rotate(90deg);
     }
 }
 
@@ -7970,5 +8002,15 @@ footer a.logo-link {
 
     90% {
         transform: scaleY(0.2);
+    }
+}
+
+@keyframes wait {
+    0% {
+        background-position: bottom -150px center;
+    }
+
+    100% {
+        background-position: bottom 0 center;
     }
 }
